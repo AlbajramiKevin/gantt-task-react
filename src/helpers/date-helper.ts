@@ -148,7 +148,7 @@ export const seedDates = (
 ) => {
   let currentDate: Date = new Date(startDate);
   if (viewMode === ViewMode.QuarterYear) {
-    currentDate = addToDate(currentDate, -1, "month");
+    currentDate = addToDate(currentDate, -2, "month");
   }
   const dates: Date[] = [currentDate];
   while (currentDate < endDate) {
