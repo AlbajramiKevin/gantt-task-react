@@ -107,11 +107,10 @@ export const Calendar: React.FC<CalendarProps> = ({
         const topValue = date.getFullYear().toString();
         let xText: number;
         if (rtl) {
-          xText = (6 + i + date.getMonth() + 1) * columnWidth;
+          xText = (2 + i + date.getMonth() + 1) * columnWidth;
         } else {
-          xText = (6 + i - date.getMonth()) * columnWidth;
+          xText = (2 + i - date.getMonth()) * columnWidth;
         }
-
         topValues.push(
           <TopPartOfCalendar
             key={topValue}
@@ -119,7 +118,7 @@ export const Calendar: React.FC<CalendarProps> = ({
             x1Line={columnWidth * i}
             y1Line={0}
             y2Line={topDefaultHeight}
-            xText={Math.abs(xText)}
+            xText={xText}
             yText={topDefaultHeight * 0.9}
           />
         );
