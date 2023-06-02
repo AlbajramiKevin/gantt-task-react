@@ -385,7 +385,7 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
   return (
     <div>
       <div
-        style={{ display: "flex" }}
+        style={{ display: "flex", padding: "16px" }}
         onKeyDown={handleKeyDown}
         tabIndex={0}
         ref={wrapperRef}
