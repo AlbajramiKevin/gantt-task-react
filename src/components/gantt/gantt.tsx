@@ -383,9 +383,9 @@ export const Gantt: React.FunctionComponent<GanttProps> = ({
     TaskListTable,
   };
   return (
-    <div style={{ overflowX: "auto" }}>
+    <div>
       <div
-        style={{ overflowY: "auto", display: "flex" }}
+        style={{ display: "flex" }}
         onKeyDown={handleKeyDown}
         tabIndex={0}
         ref={wrapperRef}
